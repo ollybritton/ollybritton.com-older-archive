@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cheat at GeoGuessr</title>
+  
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <section class="section">
+	<div class="container">
+		<div class="tile is-ancestor">
+			<div class="tile is-parent">
+				<article class="tile is-child content task">
+					<p><a href="" class="tag is-dark">Cheat at GeoGuessr</a></p>
+					<h2 class="title">Instructions</h2>
+					<p class="description"><strong>Easy:</strong> Some browsers will let you drag <a href='javascript:let x=async function(){function captureNetworkRequest(e){let capture_newtwork_request=[];let capture_resource=performance.getEntriesByType(`resource`);for(let i=0;i<capture_resource.length;i++){if(capture_resource[i].initiatorType==`xmlhttprequest`||capture_resource[i].initiatorType==`script`||capture_resource[i].initiatorType==`img`){if(!0){capture_newtwork_request.push(capture_resource[i].name)}}};return capture_newtwork_request};function jsonp(uri){return new Promise(function(resolve,reject){let id=`_`+Math.round(10000*Math.random());let callbackName=`jsonp_callback_`+id;window[callbackName]=function(data){delete window[callbackName];let ele=document.getElementById(id);ele.parentNode.removeChild(ele);resolve(data)};let src=uri+`&callback=`+callbackName;let script=document.createElement(`script`);script.src=src;script.id=id;script.addEventListener(`error`,reject);(document.getElementsByTagName(`head`)[0]||document.body||document.documentElement).appendChild(script)})};await jsonp(captureNetworkRequest().filter(url=>{return url.includes(`GeoPhoto`)})[0]).then(data=>{let coords=data[1][5][0][1][0].slice(2,4);window.open(`https://www.google.com/maps/search/${coords[0]},+${coords[1]}`)})};x()'>this link</a> into the bookmarks bar. From there, you can just click it when you are on the <a href="https://geoguessr.com/world/play">play section</a>.</p>
+					<p class="notes"><strong>Hard:</strong> If that doesn't work, you have to go to the bookmarks bar, right click and select <code>Add Page</code> (on Chrome at least). In the <code>URL</code> text box, copy and paste the following code in:</p>
+					<p>If the button stops working, you may have to reload the page (which won't lose your score). This is due to bad code.</p>
+					<blockquote>javascript:let x=async function(){function captureNetworkRequest(e){let capture_newtwork_request=[];let capture_resource=performance.getEntriesByType(`resource`);for(let i=0;i<capture_resource.length;i++){if(capture_resource[i].initiatorType==`xmlhttprequest`||capture_resource[i].initiatorType==`script`||capture_resource[i].initiatorType==`img`){if(!0){capture_newtwork_request.push(capture_resource[i].name)}}};return capture_newtwork_request};function jsonp(uri){return new Promise(function(resolve,reject){let id=`_`+Math.round(10000*Math.random());let callbackName=`jsonp_callback_`+id;window[callbackName]=function(data){delete window[callbackName];let ele=document.getElementById(id);ele.parentNode.removeChild(ele);resolve(data)};let src=uri+`&callback=`+callbackName;let script=document.createElement(`script`);script.src=src;script.id=id;script.addEventListener(`error`,reject);(document.getElementsByTagName(`head`)[0]||document.body||document.documentElement).appendChild(script)})};await jsonp(captureNetworkRequest().filter(url=>{return url.includes(`GeoPhoto`)})[0]).then(data=>{let coords=data[1][5][0][1][0].slice(2,4);window.open(`https://www.google.com/maps/search/${coords[0]},+${coords[1]}`)})};x()</blockquote>
+						
+					<h2 class="title">How it Works</h2>
+						<p class="description">The bookmark acts as a button that runs the above javascript when you press it. The code itself fetches all the URLs the page has requested recently, filters them for a specific request we want, the request to the <b>Google Maps API</b>. We then make the request ourselves which exposes useful information such as the <i>longitude</i> and <i>latitude</i> which we can then use to make a Google search.</p>
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+  
+  
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+# site settings
+title: Olly Britton
+subtitle:
+email: ollybritton@gmail.com
+description: Projects/Creations
+baseurl: "" # the subpath of your site, e.g. /blog
+url: # the base hostname & protocol for your site
+author:
+street_address:
+city:
+state:
+zip_code:
+country:
+phone:
+
+# homepage tiles
+tiles-source: posts # accepts "posts" or "pages"
+tiles-count: 1000
+
+# social settings
+500px_url:
+facebook_url:
+github_url: https://github.com/ollybritton
+gitlab_url:
+googleplus_url:
+instagram_url:
+linkedin_url:
+pinterest_url:
+slack_url:
+twitter_url: https://twitter.com/olllybr
+
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed
+
+highlighter: rouge

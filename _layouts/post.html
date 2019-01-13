@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+{% include head.html %}
+
+<body>
+
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+	{% include header.html %}
+
+
+	<!-- Main -->
+	<div id="main" class="alt">
+
+		<!-- One -->
+		<section id="one">
+			<div class="inner">
+				<header class="major">
+					<h1>{{ page.title }}</h1>
+				</header>
+				{% if page.image %}
+				<span class="image main">
+					{% if page.project_url %}
+					<a href="{{ page.project_url }}">
+						<img src="{{ site.baseurl }}/{{ page.image }}" alt="" />
+					</a>
+					{% else %}
+					<img src="{{ site.baseurl }}/{{ page.image }}" alt="" />
+					{% endif %}
+				</span>
+				{% endif %}
+				{% if page.project_url %}
+				<a class="button icon special fit fa-compass" href="{{ page.project_url }}">{{ page.project_url }}</a>
+				{% endif %}
+
+				{% if page.code_url %}
+				<a class="button icon fit fa-code" href="{{ page.code_url }}">{{ page.code_url }}</a>
+				{% endif %}
+				<p>{{ content }}</p>
+			</div>
+		</section>
+
+	</div>
+
+	{% include footer.html %}
+
+</body>
+
+</html>
