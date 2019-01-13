@@ -1,0 +1,24 @@
+TEAM
+This website was made by Olly Britton. All alone. *wipes away tear*
+
+_______________________________________________________________________________
+
+TECHNOLOGY
+
+Pug - HTML Template Engine
+https://github.com/pugjs/pug
+
+Sass - Nice Looking Css
+http://sass-lang.com/guide
+
+Google Charts - Cool-Looking Data
+https://developers.google.com/chart/
+
+SIR Model - A set of equations that simulate an epidemic
+
+_______________________________________________________________________________
+
+FONTS
+
+Roboto
+fonts.google.com

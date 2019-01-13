@@ -1,0 +1,93 @@
+@import url(bootstrap/reset.css);
+body {
+  font-family: "PT Sans", "Helvetica", sans-serif;
+  color: black;
+  line-height: 1.735;
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+  font-style: italic; }
+
+.notes {
+  text-transform: none;
+  font-style: normal; }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background: white; }
+  .main .key {
+    width: 80px;
+    height: 80px;
+    border-radius: 15%;
+    background: black;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-size: 200%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: background 100ms ease-in-out;
+    transition: color 100ms ease-in-out; }
+  .main .qwert {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto; }
+    .main .qwert .key {
+      margin: 5px; }
+  .main .asdfg {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto; }
+    .main .asdfg .key {
+      margin: 5px; }
+  .main .zxcvb {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto; }
+    .main .zxcvb .key {
+      margin: 5px; }
+  .main .q, .main .w, .main .e, .main .r, .main .a, .main .s, .main .d {
+    background: #0375b4; }
+  .main .q.activated, .main .w.activated, .main .e.activated, .main .r.activated, .main .a.activated, .main .s.activated, .main .d.activated {
+    background: white !important;
+    color: #0375b4; }
+  .main .t, .main .y, .main .u, .main .i, .main .o, .main .p, .main .f, .main .g, .main .h, .main .j, .main .k, .main .l {
+    background: #f7b733; }
+  .main .t.activated, .main .y.activated, .main .u.activated, .main .i.activated, .main .o.activated, .main .p.activated, .main .f.activated, .main .g.activated, .main .h.activated, .main .j.activated, .main .k.activated, .main .l.activated {
+    background: white !important;
+    color: #f7b733; }
+  .main .z, .main .x, .main .c {
+    background: #024469; }
+  .main .z.activated, .main .x.activated, .main .c.activated {
+    background: white !important;
+    color: #024469; }
+  .main .v, .main .b, .main .n, .main .m {
+    background: #d59208; }
+  .main .v.activated, .main .b.activated, .main .n.activated, .main .m.activated {
+    background: white !important;
+    color: #fd8666; }
+
+.notes {
+  width: 100%;
+  height: 50px;
+  background: #eee;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  color: rgba(0, 0, 0, 0.42); }
+
+/*# sourceMappingURL=main.css.map */

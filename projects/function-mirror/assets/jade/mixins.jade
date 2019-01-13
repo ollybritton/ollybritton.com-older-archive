@@ -1,0 +1,34 @@
+mixin scripts
+  script(src='assets/js/misc/p5.js', type='text/javascript')
+  script(src='assets/js/misc/p5.dom.js', type='text/javascript')
+  script(src='assets/js/misc/p5.sound.js', type='text/javascript')
+  script(src='assets/js/misc/tools.js', type='text/javascript')
+  script(src='assets/js/misc/maths.js', type='text/javascript')
+  script(src='assets/js/functions.js', type='text/javascript')
+  script(src='assets/js/data.js', type='text/javascript')
+
+mixin expression
+  .expression
+    .top-bar
+      p.instruction Type in your expression:
+      p.title Function Mirror
+      
+    .input-container
+      input(type="text" placeholder="For example: x**2").input#input
+  
+
+mixin videos
+  .videos
+    .actual_videos
+
+mixin examples
+  .examples
+    h1 Some cool examples:
+    p.special cos(pi/(x/50))*1000
+    p.special totient(x)
+    p.special gamma(x/20)
+    p.special ((e**(x/20)) * cos(2*pi*x))
+    p.special zeta.sum(x/150, 15)*30
+    p.special cos(x/20)*500
+    p.special sin(x/(5*pi))*1000
+    p.special tan(x/(30*pi)) * 100

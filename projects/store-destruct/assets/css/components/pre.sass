@@ -1,0 +1,32 @@
+$transition-speed: 200ms
+
+=flex()
+  width: 100%
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+  text-align: center
+  margin: 0 auto
+
+.pre
+  +flex()
+
+.hero
+  +flex()
+
+.title
+  font-size: 150%
+
+.button
+  background-color: rgba(0,0,0,0.1)
+  color: rgba(0,0,0,0.6)
+  max-width: 40%
+  padding: 10px 100px
+  margin: 0 auto
+  margin-top: 20px
+  transition: background $transition-speed ease-in-out, color $transition-speed ease-in-out
+
+  &:hover
+    background: black
+    color: white

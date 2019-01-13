@@ -1,0 +1,53 @@
+$height: 20vh
+
+.countdown
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 100%
+  height: 100vh
+  text-align: center
+  cursor: none
+
+.top, .bottom
+  width: 100%
+  height: calc((100vh - $height) / 2)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  font-size: 100%
+  transition: opacity 4000ms ease-in-out
+  opacity: 0
+  max-width: 95%
+  margin: 0 auto
+  .first
+    font-size: 100%
+
+.fadedIn
+  opacity: 1 !important
+
+.timer-box
+  width: 100%
+  height: $height
+  display: flex
+  flex-direction: column
+  justify-content: center
+  .timer
+    font-size: 400%
+    font-weight: bold
+
+.faultCode
+  position: absolute
+  bottom: 0px
+  width: 100%
+  height: 10vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+  text-align: center
+  opacity: 0
+  transition: opacity 4000ms ease-in-out
+  pre
+    font-family: "Roboto"
+    font-weight: bold
+    font-size: 130%

@@ -1,0 +1,45 @@
+@import url(bootstrap/reset.css);
+body {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  color: black;
+  line-height: 1.735;
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  font-weight: bold; }
+
+.counter {
+  margin: 0 auto; }
+  .counter select {
+    font-family: "Inconsolata";
+    font-size: 120%;
+    font-weight: bold;
+    height: 50%; }
+  .counter .top {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .counter .top .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .counter .top .timer {
+      font-size: 300%; }
+
+.death-counts {
+  margin: 0 auto;
+  font-size: 200%; }
+
+.todo {
+  height: 50vh;
+  background: #b0b0b0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+/*# sourceMappingURL=main.css.map */

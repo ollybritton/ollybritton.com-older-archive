@@ -1,0 +1,113 @@
+$lime: #b0eb00
+$bright-red: #b30015
+$dark-blue: #2a00b3
+$deep-cerulean: #0077b3
+$bondi-blue: #00b0b3
+$cyan: #24fbff
+$heliotrope: #8a7dff
+$silver-chalice: #a6a6a6
+$scorpion: #595959
+$tundora: #444
+$mine-shaft: #363636
+$cod-gray: #111
+
+.main
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 100%
+    height: 100vh
+    text-align: center
+    background: white
+    
+    .key
+        width: 80px
+        height: 80px
+        border-radius: 15%
+        background: black
+        font-weight: bold
+        text-align: center
+        color: white
+        font-size: 200%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        transition: background 100ms ease-in-out
+        transition: color 100ms ease-in-out
+  
+    .qwert
+        width: 65%
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        margin: 0 auto
+        
+        .key
+            margin: 5px
+        
+    .asdfg
+        width: 60%
+        //background: $cyan
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        margin: 0 auto
+        
+        .key
+            margin: 5px
+            
+    .zxcvb
+        width: 50%
+        //background: $cyan
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        margin: 0 auto
+        
+        .key
+            margin: 5px
+        
+        
+    .q, .w, .e, .r, .a, .s, .d
+        // Drums
+        background: #0375b4
+        
+    .q.activated, .w.activated, .e.activated, .r.activated, .a.activated, .s.activated, .d.activated
+        background: white !important
+        color: #0375b4    
+        
+    .t, .y, .u, .i, .o, .p, .f, .g, .h, .j, .k, .l
+        // Notes
+        background: #f7b733
+        
+    .t.activated, .y.activated, .u.activated, .i.activated, .o.activated, .p.activated, .f.activated, .g.activated, .h.activated, .j.activated, .k.activated, .l.activated
+        background: white !important
+        color: #f7b733 
+        
+    .z, .x, .c
+        // Drum Samples
+        background: darken(#0375b4, 15%)
+        
+    .z.activated, .x.activated, .c.activated
+        background: white !important
+        color: darken(#0375b4, 15%) 
+        
+    .v, .b, .n, .m
+        // Drum Samples
+        background: darken(#f7b733, 15%)
+        
+    .v.activated, .b.activated, .n.activated, .m.activated
+        background: white !important
+        color: lighten(#fc4a1a, 15%)
+        
+.notes
+    width: 100%
+    height: 50px
+    background: #eee
+    text-align: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    position: absolute
+    bottom: 0
+    color: rgba(0, 0, 0, 0.42)

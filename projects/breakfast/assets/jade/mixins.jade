@@ -1,0 +1,14 @@
+mixin scripts
+  script(src='assets/js/misc/jquery.js', type='text/javascript')
+  script(src='assets/js/misc/tools.js', type='text/javascript')
+  script(src='assets/js/data.js', type='text/javascript')
+  script(src='assets/js/functions.js', type='text/javascript')
+
+mixin main
+  .initial-title
+    h1 What's for Breakfast?
+    p.sub (Press any key/tap the screen to find out) | <a href="javascript:drunk=true;updatePage();">Wait, I've got a hangover.</a>
+
+  .what
+    h1#food Please wait...
+    p.sub#sub (Plus a cup of coffee) | <a href="javascript:drunk=true;updatePage()">Wait, I've got a hangover</a>

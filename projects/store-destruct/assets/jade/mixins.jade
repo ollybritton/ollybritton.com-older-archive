@@ -1,0 +1,38 @@
+mixin scripts
+  script(src='assets/js/misc/jquery.js', type='text/javascript')
+  script(src='assets/js/data.js', type='text/javascript')
+  script(src='assets/js/fullscreen.js', type='text/javascript')
+  script(src='assets/js/functions.js', type='text/javascript')
+  noscript ERROR: This will not work, because the browser doesn't support js.
+
+mixin pre
+  #pre.pre
+    .hero
+      h1.title Enter self termination mode.
+      .button#btn
+        p Go.
+    
+  
+
+mixin init
+  #init.init
+    video(autoplay muted loop)
+      source(src="https://www.apple.com/media/us/macbook-pro/2016/b4a9efaa_6fe5_4075_a9d0_8e4592d6146c/films/design/macbook-pro-design-tft-cc-us-20161026_1536x640h.mp4" type="video/mp4")
+
+mixin countdown
+  #countdown.countdown
+    .top#top
+      p.first A #[span.bold system fault has occured], which could potentially cause the CPU to #[span.bold overheat and burst].
+      p.seconds As a saftey measure, in 120 seconds the computer will self-terminate by overloading and incapacitating the mother board. 
+    .timer-box
+      #timer.timer 120.00 seconds remain.
+    .bottom#bottom
+      p.first #[span.bold In the event] that the timer reaches zero, plese seek refuge behind a #[span.bold non-flammable hard surface] which will protect you from #[span.bold shrapnel] caused by the small explosion.
+      
+    .faultCode#faultCode
+      p.second If you are in a position to do so, please fetch "Malcom" from the front desk, quoting the fault code:
+      pre.code ID 10T
+
+mixin explosion
+  #explosion.explosion
+    p.bold *poof*
